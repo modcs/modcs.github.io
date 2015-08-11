@@ -83,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_file_listing_entry-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -98,14 +99,46 @@ Inheritance diagram for FileListingEntry:</div>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aecb2514cf04e94805dd047562ed0a053"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecb2514cf04e94805dd047562ed0a053"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ObjectType</b> { <br />
+&#160;&#160;<b>UNKNOWN</b>, 
+<b>DATA_OBJECT</b>, 
+<b>COLLECTION</b>, 
+<b>UNKNOWN_FILE</b>, 
+<br />
+&#160;&#160;<b>LOCAL_FILE</b>, 
+<b>LOCAL_DIR</b>, 
+<b>NO_INPUT</b>
+<br />
+ }<tr class="separator:aecb2514cf04e94805dd047562ed0a053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:ab7d3d899b14d3b49c4430b4364e6659d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7d3d899b14d3b49c4430b4364e6659d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EntryColumn</b> { <br />
+&#160;&#160;<b>PARENT_PATH</b> = 0, 
+<b>PATH_OR_NAME</b> = 1, 
+<b>SPECIAL_OBJECT_PATH</b> = 2, 
+<b>OBJECT_TYPE</b> = 3, 
+<br />
+&#160;&#160;<b>CREATED_AT</b> = 4, 
+<b>MODIFIED_AT</b> = 5, 
+<b>DATA_SIZE</b> = 6, 
+<b>OWNER_NAME</b> = 7, 
+<br />
+&#160;&#160;<b>OWNER_ZONE</b> = 8, 
+<b>ID</b> = 9, 
+<b>IS_COLLECTION</b> = 10
+<br />
+ }<tr class="separator:ab7d3d899b14d3b49c4430b4364e6659d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a911b6ec7c1699d40a2dfd99c5ce20fed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_listing_entry.html#a911b6ec7c1699d40a2dfd99c5ce20fed">FileListingEntry</a> (QObject *parent=0)</td></tr>
 <tr class="memdesc:a911b6ec7c1699d40a2dfd99c5ce20fed"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_file_listing_entry.html#a911b6ec7c1699d40a2dfd99c5ce20fed" title="FileListingEntry::FileListingEntry Constructor method. ">FileListingEntry::FileListingEntry</a> Constructor method.  <a href="#a911b6ec7c1699d40a2dfd99c5ce20fed">More...</a><br /></td></tr>
 <tr class="separator:a911b6ec7c1699d40a2dfd99c5ce20fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1970f8b650f3dbcf46fc7bcf371510e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1970f8b650f3dbcf46fc7bcf371510e5"></a>
-QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>getField</b> (EntryColumn)</td></tr>
-<tr class="separator:a1970f8b650f3dbcf46fc7bcf371510e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed401a04f922e80dffb23f7e4967e9ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed401a04f922e80dffb23f7e4967e9ee"></a>
+QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>getField</b> (FileListingEntry::EntryColumn col)</td></tr>
+<tr class="separator:aed401a04f922e80dffb23f7e4967e9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abea72c6ff96b2cff0871c5847243f7e4"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_listing_entry.html#abea72c6ff96b2cff0871c5847243f7e4">parentPath</a> () const </td></tr>
 <tr class="memdesc:abea72c6ff96b2cff0871c5847243f7e4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_file_listing_entry.html#abea72c6ff96b2cff0871c5847243f7e4" title="FileListingEntry::parentPath Gets the parent path. ">FileListingEntry::parentPath</a> Gets the parent path.  <a href="#abea72c6ff96b2cff0871c5847243f7e4">More...</a><br /></td></tr>
 <tr class="separator:abea72c6ff96b2cff0871c5847243f7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,9 +148,9 @@ QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>getField</b> (Ent
 <tr class="memitem:a36d4b9ce8120b8377c5e60bb1d14161a"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_listing_entry.html#a36d4b9ce8120b8377c5e60bb1d14161a">specialObjectPath</a> () const </td></tr>
 <tr class="memdesc:a36d4b9ce8120b8377c5e60bb1d14161a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_file_listing_entry.html#a36d4b9ce8120b8377c5e60bb1d14161a" title="FileListingEntry::specialObjectPath Gets special object path. ">FileListingEntry::specialObjectPath</a> Gets special object path.  <a href="#a36d4b9ce8120b8377c5e60bb1d14161a">More...</a><br /></td></tr>
 <tr class="separator:a36d4b9ce8120b8377c5e60bb1d14161a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2e2749b9d9e32adbd548148d5384b1f"><td class="memItemLeft" align="right" valign="top">ObjectType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_listing_entry.html#ab2e2749b9d9e32adbd548148d5384b1f">objectType</a> () const </td></tr>
-<tr class="memdesc:ab2e2749b9d9e32adbd548148d5384b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_file_listing_entry.html#ab2e2749b9d9e32adbd548148d5384b1f" title="FileListingEntry::objectType Gets the object type. ">FileListingEntry::objectType</a> Gets the object type.  <a href="#ab2e2749b9d9e32adbd548148d5384b1f">More...</a><br /></td></tr>
-<tr class="separator:ab2e2749b9d9e32adbd548148d5384b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a025bfc5e3d4349bc66d6aa3f126c3425"><td class="memItemLeft" align="right" valign="top">ObjectType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_listing_entry.html#a025bfc5e3d4349bc66d6aa3f126c3425">objectType</a> () const </td></tr>
+<tr class="memdesc:a025bfc5e3d4349bc66d6aa3f126c3425"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_file_listing_entry.html#a025bfc5e3d4349bc66d6aa3f126c3425" title="FileListingEntry::objectType Gets the object type. ">FileListingEntry::objectType</a> Gets the object type.  <a href="#a025bfc5e3d4349bc66d6aa3f126c3425">More...</a><br /></td></tr>
+<tr class="separator:a025bfc5e3d4349bc66d6aa3f126c3425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27bc4bcf2f7a21692972914fb9f98bb2"><td class="memItemLeft" align="right" valign="top">long long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_listing_entry.html#a27bc4bcf2f7a21692972914fb9f98bb2">createdAt</a> () const </td></tr>
 <tr class="memdesc:a27bc4bcf2f7a21692972914fb9f98bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_file_listing_entry.html#a27bc4bcf2f7a21692972914fb9f98bb2" title="FileListingEntry::createdAt Gets the creation date. ">FileListingEntry::createdAt</a> Gets the creation date.  <a href="#a27bc4bcf2f7a21692972914fb9f98bb2">More...</a><br /></td></tr>
 <tr class="separator:a27bc4bcf2f7a21692972914fb9f98bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -561,12 +594,12 @@ QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>getField</b> (Ent
 
 </div>
 </div>
-<a class="anchor" id="ab2e2749b9d9e32adbd548148d5384b1f"></a>
+<a class="anchor" id="a025bfc5e3d4349bc66d6aa3f126c3425"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ObjectType FileListingEntry::objectType </td>
+          <td class="memname">FileListingEntry::ObjectType FileListingEntry::objectType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -574,7 +607,7 @@ QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>getField</b> (Ent
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_file_listing_entry.html#ab2e2749b9d9e32adbd548148d5384b1f" title="FileListingEntry::objectType Gets the object type. ">FileListingEntry::objectType</a> Gets the object type. </p>
+<p><a class="el" href="class_file_listing_entry.html#a025bfc5e3d4349bc66d6aa3f126c3425" title="FileListingEntry::objectType Gets the object type. ">FileListingEntry::objectType</a> Gets the object type. </p>
 <p>Gets the object type.</p>
 <dl class="section return"><dt>Returns</dt><dd>returns the object type. </dd></dl>
 

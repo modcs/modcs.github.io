@@ -9,5 +9,6 @@ var searchData=
   ['getfile',['getFile',['../class_file_contents_client.html#ae4f52793015ceca9c88ebd274d3624f4',1,'FileContentsClient::getFile()'],['../class_q_r_o_d_s.html#a9dea2f23da77757a30f7894a630ab7db',1,'QRODS::getFile()'],['../class_q_r_o_d_s_private.html#a11a91f16b7c076f7ba543e7fd43b88c9',1,'QRODSPrivate::getFile()']]],
   ['getfullpath',['getFullPath',['../class_file_listing_entry.html#ab7a0cfb4096bd601515d32d15f35662a',1,'FileListingEntry']]],
   ['getnextpage',['getNextPage',['../class_collection_client.html#a56e7410aeea8ced7dc3b17a22562d006',1,'CollectionClient::getNextPage()'],['../class_collection_client.html#ab175a0ad1e380107778d556e59e1d94a',1,'CollectionClient::getNextPage(FileListingEntry *)'],['../class_q_r_o_d_s_private.html#aecacab8d8bf68c9a7f245d27257b77b2',1,'QRODSPrivate::getNextPage()']]],
-  ['getpagedata',['getPageData',['../class_q_r_o_d_s.html#aede7d254bea5276aa564b7f3d5b10d72',1,'QRODS']]]
+  ['getpagedata',['getPageData',['../class_q_r_o_d_s.html#aede7d254bea5276aa564b7f3d5b10d72',1,'QRODS']]],
+  ['getqrodsversion',['getQRODSVersion',['../class_q_r_o_d_s.html#aa1be85dd5cc9273d98b4f40538b0e287',1,'QRODS::getQRODSVersion()'],['../class_q_r_o_d_s_private.html#abe94ee58a1521110e6786d5429c0e517',1,'QRODSPrivate::getQRODSVersion()']]]
 ];
